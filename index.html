@@ -1,11 +1,38 @@
-?<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tailwind CSS Practice</title>
+    <!-- Custom Tailwind config for CDN -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+             'mycustom': '#ffb347', // your custom color (orange)
+            }
+          }
+        }
+      }
+    </script>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
+    <div>
+        <section
+            class="bg-mycustom text-center align-items-center justify-center flex flex-col md:p-1 lg:p-12 sm:p-5">
+            Hello, Tailwind CSS!
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam provident quam fugit, fuga vitae
+                repudiandae ea laboriosam architecto quidem labore in, vero, est dolorem! Quasi illum dicta natus cumque
+                ad.
+            </p>
+        </section>
+    </div>
 </body>
+
 </html>
